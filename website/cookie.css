@@ -1,0 +1,129 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #4256b0; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+#score {
+    font-size: 24px;
+    margin: 10px 0 30px 0;
+}
+
+.game-area {
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+#cookie {
+    position: absolute;
+    left: 0px;   
+    top: 0px;     
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#cookie:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 20px #FFD700; 
+}
+
+#buy-auto, #upgrade-click, #upgrade-auto {
+    position: absolute;
+    right: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+    color: white;
+}
+
+#buy-auto {
+    top: 50px;
+    background-color: #FFB800;
+}
+
+#upgrade-click {
+    top: 120px;
+    background-color: #ed9d47;
+    width: 180px;
+}
+
+#upgrade-auto {
+    top: 180px;
+    background-color: #ed9d47;
+    width: 180px;
+}
+
+#buy-auto:hover,
+#upgrade-click:hover,
+#upgrade-auto:hover {
+    background-color: #FFD233;
+    transform: scale(1.05);
+}
+
+#inventory {
+    position: absolute;
+    left: 58px;       
+    top: 300px;       
+    width: 300px;     
+    background-color: #FFB800; 
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 19px;
+}
+
+#inventory h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#themes { 
+    position: absolute; 
+    left: 930px;       
+    top: 400px;        /* net onder de laatste knop */
+    background-color: rgba(37, 29, 132, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    text-align: center;
+}
+
+#themes h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+#themes button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFB800;
+    color: #4256b0;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+#themes button:hover {
+    background-color: #FFD233;
+    transform: scale(1.05);
+}
